@@ -15,7 +15,7 @@
         <aside>
             <nav>
                 <div id="menu">
-                    <h3>Menu</h3>
+                    <span>Menu</span>
                     <ul>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Sing Up</a></li>
@@ -23,7 +23,7 @@
                     </ul>
                 </div>
                 <div id="contact-us">
-                    <h3>Contact Us</h3>
+                    <span>Contact Us</span>
                         <ul>
                             <li><a href="#">contact@trackgenix.com</a></li>
                             <li><a href="#">+1 555-000-555</a></li>
@@ -34,20 +34,20 @@
           </nav> 
         </aside>
         <main>
-            <section id="section1">
+            <section class="section1">
                 <div id = "texto1">
                 <h1>Transgenix</h1>
                     <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                dummy text ever since the 1500s, when
-                an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
                 </div>
                 <div id="imagen">
-                        <img src="imagenes/reloj.jpg">
+                        <img src="imagenes/reloj.jpg" alt="reloj">
                 </div>
             </section>
-            <section id="funcionalities">
+            <section class="funcionalities">
                 <h2>Funcionalities</h2>
                     <div id="timesheet">
                         <h3>Timesheet</h3>
@@ -78,7 +78,7 @@
                         </p>
                     </div>
             </section>
-            <section id="whytrag">
+            <section class="whytrag">
                 <h2>¿Why do you use Trackgenix?</h2>
                 <div id="productybooster">
                     <h3>Productivity booster </h3>
@@ -112,40 +112,34 @@
                         book.
                     </p>
                 </div>
-
             </section>
-            <section id="ask-for">
+            <section class="ask-for">
                 <h2>Ask for information</h2>
                 <div id="formulario">
                     <form action="#" method="post">
-                        <ul>
-                            <li>
-                                <label for="name"></label>
-                                <input type="text" id="name" name="user_name" placeholder="name">
-                            </li>
-                            <li>
-                                <label for="mail"></label>
-                                <input type="email" id="mail" name="user_mail" placeholder="email">
-                            </li>
-                            <li>
-                             <p>Contact area</p>
+                        <div id="name-form">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="user_name" placeholder="name">
+                            <label for="mail"></label>
+                            <input type="email" id="mail" name="user_mail" placeholder="email">
+                        </div>
+                        <div id="contactarea-form">
+                            <p>Contact area</p>
                             <input type="radio" id="humres" name="fav_language" value="Human Resources">
                             <label for="humres">Human Resources</label>
                             <input type="radio" id="sistems" name="fav_language" value="Sistems">
                             <label for="sistems">Sistems</label>
                             <input type="radio" id="commercialization" name="fav_language" value="Commercialization">
                             <label for="commercialization">Commercialization</label>
-                            </li>
-                             <li>
-                                <label for="msg">Enter your message</label>
-                                <textarea id="msg" name="user_message" value="Enter your message"></textarea>
-                            </li>
-                            <li>
-                                <input type="submit" value="SEND MESSAGE">
-                                <input type="button" value="RESET">
-                            </li>
-                        </ul>
-                    
+                            <label for="msg">Enter your message</label>
+                        </div>
+                        <div id="text-area">
+                            <textarea id="msg" name="user_message" value="Enter your message" placeholder="Send your message"></textarea>
+                        </div>
+                        <div id="boton-form">
+                            <input type="submit" value="SEND MESSAGE">
+                            <input type="button" value="RESET">
+                        </div>
                     </form>
                 </div>
             </section>
@@ -157,10 +151,9 @@
                         dummy text ever since the 1500s, when
                         an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
-                
                 </div>
                 <div id= "imagencohete">
-                    <img src="imagenes/radium-rocket.png" alt="">   
+                    <img src="imagenes/radium-rocket.png" alt="logo">   
                 </div>
             </section>
             <section>
@@ -179,7 +172,6 @@
                         <li>
                             Extras
                         </li>
-
                     </ol>
                 </div>
                 <div id="company">
@@ -197,7 +189,6 @@
                         <li>
                             Blog
                         </li>
-                
                     </ol>
                 </div>
                 <div id="support">
@@ -219,11 +210,9 @@
                     </ol>
                 </div>
             </section>
-             
         </main>
         <footer>
-            Trackgenix ®
+           <span>Trackgenix ®</span> 
         </footer>
     </body>
-
 </html>
