@@ -1,8 +1,8 @@
 
 
 header {
-    display: inline-block;
     position: fixed;
+    display: inline-block;
     width: 100%;
     height: 96px;
     background: #373867;
@@ -18,18 +18,18 @@ main {
      margin-top: 200px;
 }
  footer {
+     position: relative;
      width: 100%;
      height: 60px;
-     position: relative;
+     top: 207px;
+     background-color: #D9D9E2;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 16px;
      text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    background-color: #D9D9E2;
-    top: 207px;
-    z-index: 1;
+     z-index: 1;
      }
 
  a {
@@ -40,13 +40,13 @@ a:hover {
     color: #AACE9B;
 }
 .radium{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
     font-family: "Roboto";
     font-size: 50px;
     color: #1a8b53;
     font-weight: bolder;
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: 20px;
 }
 
 .rocket{
@@ -56,18 +56,19 @@ a:hover {
 }
 
 #titulo{
+    margin-bottom: 42px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
     color: #373867;
-    margin-bottom: 42px;
+ 
 }
 
 #lateral {
-    display: inline-block;
     position: fixed;
+    display: inline-block;
     width: 423px;
     height: 850px;
     left: 0px;
@@ -77,17 +78,17 @@ a:hover {
 }
 
 .boton-menu1{
-    height: 850px;
-    width: 423px;
-    background-color: #ffffff;
     display: inline-block;
+    width: 423px;
+    height: 850px;
+    background-color: #ffffff;
 }
 
 .icono-menu1{
-    width: 61px;
-    height: 61px;
     display: block;
     float: right;
+    width: 61px;
+    height: 61px;
     margin-top: 32px;
     background-color: rgb(255, 255, 255);
 }
@@ -98,17 +99,17 @@ a:hover {
 }
 
 .boton-menu2{
-    background-color: #D9D9E2;
+    position: relative;
+    display: inline-block;
     height: 850px;
     width: 346px;
-    display: inline-block;
-    position: relative;
+    background-color: #D9D9E2;
 }
 
 #menu span {
+    display: inline-block;
     width: 82px;
     height: 35px;
-    display: inline-block;
     margin-top: 10px;
     margin-bottom: 59px;
     border-bottom: #AACE9B solid;
@@ -144,6 +145,10 @@ a:hover {
     text-decoration: none;
     color: #373867;
 
+}
+
+#menu a:hover {
+    color:#AACE9B;
 }
 
 #contact-us {
@@ -192,20 +197,24 @@ a:hover {
     color: #373867;
 }
 
+#contact-us a:hover {
+ color: #AACE9B;
+}
+
 .section1 {
+    display: inline-block;
     width: 1112px;
     height: 400px;
-    background-color: #fff;
-    display: inline-block;
     margin-left: 92px;
+    background-color: #fff;
 }
 
 .texto1 {
+    position: relative;
+    display: inline-block;
     width: 40%;
     height: 200px;
-    position: relative;
     bottom: 80px;
-    display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -216,9 +225,9 @@ a:hover {
 
 
 .imagen-r {
+    display: inline-block;
     width: 400px;
     height: 390px;
-    display: inline-block;
     left: 900px;
     top: 273px;
     margin-left: 30px;
@@ -227,16 +236,15 @@ a:hover {
 }
 
 .reloj-image {
-        width: 100%;
-        height: 390px;
         display: inline-block;
         position: relative;
+        width: 100%;
+        height: 390px;
 }
  .section2 {
-    background-color: rgb(255, 255, 255);
+    display: inline-block; 
     width: 1114px;
     height: 638px;
-    display: inline-block;
     margin-left: 92px;
     margin-top: 56px;
     border-bottom: #373867 solid;
@@ -256,44 +264,44 @@ a:hover {
 .sec-fun {
     display:inline-block;
     width: 318px;
+    height: 80px;
+    margin-right: 220px;
+    margin-top: 112px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 450px;
     font-size: 14px;
     line-height: 18px;
     color: #373867;
-    height: 80px;
-    margin-right: 220px;
-    margin-top: 112px;
 }
 
 .sec-fun h3 {
+    margin-bottom: 18px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     color: #373867;
-    margin-bottom: 18px;
+ 
 }
 
 .estrellita {
+    position: relative;
+    display: inline-block;
     width: 90px;
     height: 146px;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    position: relative;
     bottom: 66px;
 
 }
 
 .estrellita2 {
+    position: relative;
+    display: inline-block;
     width: 90px;
     height: 146px;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    position: relative;
     bottom: 106px;
+    background-color: rgb(255, 255, 255);   
 }
 
 .estrella-img{
@@ -301,10 +309,10 @@ a:hover {
 }
 
 .sec-texto {
-display:inline-block;
-width: 218px;
-background-color: rgb(255, 255, 255);
-}
+    display:inline-block;
+    width: 218px;
+    background-color: rgb(255, 255, 255);
+    }
 
 .sec-texto2 {
     display: inline-block;
@@ -313,13 +321,13 @@ background-color: rgb(255, 255, 255);
 }
 
 .ask-for {
-background-color: #fff;
+display: inline-block;
 width: 1114px;
 height: 542px;
-display: inline-block;
 margin-left: 92px;
 margin-top: 56px;
 border-bottom: #373867 solid;
+background-color: #fff;
 }
 
 .ask-for h2 {
@@ -333,8 +341,8 @@ color: #373867;
 }
 
 .formulario {
-    display: inline-block;
     position: relative;
+    display: inline-block;
     top: 88px;
 }
 
@@ -346,19 +354,20 @@ color: #373867;
 .name-form input[type="text"]{
     width: 437px;
     height: 17px;
-    border: 1px solid #373867;
     box-sizing: border-box;
     border-radius: 4px;
     padding: 10px 12px;
+    border: 1px solid #373867;
 }
 
 .name-form input[type="email"] {
     width: 437px;
     height: 17px;
-    border: 1px solid #373867;
-    box-sizing: border-box;
-    border-radius: 4px;
+    box-sizing: border-box;   
     padding: 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+
 }
 
 .contactarea-form{
@@ -400,62 +409,59 @@ color: #373867;
 .text-area textarea {
     height: 164px;
     width: 954px;
-    border: 1px solid #373867;
-    box-sizing: border-box;
-    border-radius: 4px;
     padding: 10px 12px;
-
+    box-sizing: border-box;
+    border: 1px solid #373867;
+    border-radius: 4px;
 }
 
 .boton{
+    display: inline;
     width: 190px;
     height: 47px;
-    background: #AACE9B;
-    border-radius: 5px;
-    display: inline;
-    flex-direction: row;
-    align-items: center;
     padding: 14px 36px;
+    border-radius: 5px;
+    background: #AACE9B;
+    flex-direction: row;
+    align-items: center;    
 }
 
 .boton:hover{
-background: #07193a;
-color: #D9D9E2;
-border: 1px solid #ffffff
-
+    border: 1px solid #ffffff;
+    background: #07193a;
+    color: #D9D9E2;
 }
 
 .boton-reset{
-    align-items: center;
     padding: 14px 36px;
-    border: 1px solid #373867;
     box-sizing: border-box;
+    border: 1px solid #373867;
     border-radius: 5px;
+    align-items: center;
 }
 
 .boton-reset:hover{
-    background: #07193a;
-    color: #D9D9E2;
-    border: 1px solid #ffffff
+     border: 1px solid #ffffff;
+     background: #07193a;
+     color: #D9D9E2;
 }
 
 .aboutus {
-    background-color:#fff;
+    display: inline-block;
     width: 1114px;
     height: 467px;
-    display: inline-block;
     margin-left: 92px;
     margin-top: 56px;
     border-bottom: #373867 solid;
 }
 
 #textoabout {
+    position: relative;
+    display: inline-block;
     width: 445px;
     height: 400px;
-    background-color: #fff;
-    display: inline-block;
-    position: relative;
     bottom: 94px;
+    background-color: #fff;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -464,20 +470,21 @@ border: 1px solid #ffffff
 }
 
 #textoabout h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
     color: #373867;
-    margin-top: 50px;
-    margin-bottom: 50px;
+
 }
 
 #imagencohete {
+    display: inline-block;
     width: 445px;
     height: 400px;
-    display: inline-block;
     background-color: crimson;
 }
 
@@ -487,18 +494,16 @@ border: 1px solid #ffffff
 }
 
 .section4{
-    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
     width: 1114px;
     height: 346px;
-    display: inline-block;
-    position: relative;
     margin-left: 92px;
     margin-top: 56px;
     margin-bottom: 50px;
 }
 
 .grupo4{
-    background-color: rgb(255, 255, 255);
     display: inline-block;
     width: 94px;
     height: 104px;
@@ -533,12 +538,12 @@ padding-top: 3px;
 }
 
 .iconos-footer{
-    width: 322 px ;
+    width: 322px ;
     height: 100%;
     display: inline-block;
     margin-top: 7px;
     position: relative;
-    right: 242px;
+    right: 188px;
 }
 
 .iconos-footer a{
