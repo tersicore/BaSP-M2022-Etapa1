@@ -4,8 +4,7 @@ Trackgenix is an app that helps companies to register the working hours of each 
 ## Second Week
 ```
 We made the HTML structure recreating the landing page, that we made the last week using figma.  
-
+```
 ## Third Week
 ```
-We created css stylesheet using the landing page inrface on figma, as model. 
-```
+We created css stylesheet using the landing page inrface on figma, as model.
