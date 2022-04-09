@@ -7,4 +7,4 @@ We made the HTML structure recreating the landing page, that we made the last we
 ```
 ## Third Week
 ```
-We created css stylesheet using the landing page inrface on figma, as model. 
+We created css stylesheet using the landing page inrface on figma, as model.
