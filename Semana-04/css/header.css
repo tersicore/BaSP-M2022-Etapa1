@@ -1,0 +1,50 @@
+
+.fiting-header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 96px;
+    flex-direction: row;
+    background: #373867;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.radium {
+    font-size: 2.5em;
+    color: #1a8b53;
+    font-weight: bolder;
+}
+
+.rocket {
+    font-family: "Roboto";
+    font-size: 2.5em;
+    color: #AACE9B;
+}
+
+.tit-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+}
+.menu-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+#iconito{
+    font-size: 3.125em;
+    color: #AACE9B;
+}
+
+#lateral{
+    display: none;
+}
