@@ -1,0 +1,11 @@
+#lateral {
+    display: none;
+}
+
+main {
+    display: inline-block;
+    position: relative;
+    width: 900px;
+    height: 900px;
+    padding-top: 200px;
+    }
