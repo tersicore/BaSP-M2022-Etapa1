@@ -13,6 +13,7 @@
     display: inline-block;
     position: relative;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .fix-section1{
@@ -70,7 +71,16 @@
     flex-direction: column;
     justify-content: space-around;
     height: 1116px;
+
+}
+
+.fit-section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1116px;
     margin-bottom: 4.375em;
+
 }
 
 .section2 h2 {
@@ -111,7 +121,7 @@
 .estrellita{
     display: flex;
     align-items: flex-start;
-    margin-left: 0.6em;
+    margin-left: 1em;
 }
 
 .ask-for{
@@ -122,7 +132,7 @@
 }
 
 .ask-for h2 {
-    margin-left: 0.6em;
+    margin: 0.6em;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -265,4 +275,59 @@
 
 .grupo4 li {
     padding-top: 1.438em;
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px){
+
+
+ 
+.texto-imagen {
+    width: 95%;
+    height: 342px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center ;
+}
+
+.texto1 {
+    width:70% ;
+}
+
+.texto1 p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.section2 {
+    height: 700px;
+}
+
+.fit-section2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 431px;
+    margin-bottom: 4.375em;
+
+}
+
+.sec-fun{
+    display: flex;
+    width: 50%;
+}
+
+.aboutus{
+    flex-direction: row;
+    width: 95%;
+
+}
+
+#textoabout{
+    width: 70%
+
+}
+
+
 }
