@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="css/header.css" media="screen"/>
         <link rel="stylesheet" href="css/main.css" media="screen"/>
         <link rel="stylesheet" href="css/reset.css" media="screen"/> 
+        <link rel="stylesheet" href="css/footer.css" media="screen" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap"/> 
         <meta charset="utf-8">
         <meta name="description" content="Transgenix"/>
@@ -54,16 +55,23 @@
             </aside>
             <main>
                 <section class="section1">
-                    <div class = "texto1">
-                    <h1 id="titulo">Trackgenix</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                            dummy text ever since the 1500s, when
-                            an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-                    <div class="imagen-r">
-                        <img class="reloj-image" alt="reloj">
+
+                    <div class="fix-section1">
+                            <div class = "titulo1">
+                                <h1 id="titulo">Trackgenix</h1>
+                            </div>
+                        <div class="texto-imagen">
+                            <div class="texto1">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s, when
+                                        an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </p>
+                            </div>
+                            <div class="imagen-r">
+                                <img class="reloj-image" src="img/reloj.jpg" alt="reloj">
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="section2">
@@ -185,18 +193,24 @@
                             </div>
                             <div class="contactarea-form">
                                 <p>Contact area</p>
-                                <input type="radio" id="humres" name="fav_language" value="Human Resources">
-                                <label for="humres">Human Resources</label>
-                                <input type="radio" id="sistems" name="fav_language" value="Sistems">
-                                <label for="sistems">Sistems</label>
-                                <input type="radio" id="commercialization" name="fav_language" value="Commercialization">
-                                <label for="commercialization">Commercialization</label>
+                               <div>
+                                    <input type="radio" id="humres" name="fav_language" value="Human Resources">
+                                    <label for="humres">Human Resources</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="sistems" name="fav_language" value="Sistems">
+                                    <label for="sistems">Sistems</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="commercialization" name="fav_language" value="Commercialization">
+                                    <label for="commercialization">Commercialization</label>
+                                </div>
                             </div>
                             <div class="text-area">
                                 <textarea  name="user_message"  placeholder="Send your message"></textarea>
                             </div>
                             <div id="boton-form">
-                                <input class="boton" type="submit" value="SEND MESSAGE">
+                                <input class="boton" type="submit" value="Send Message">
                                 <input class="boton-reset" type="button" value="RESET">
                             </div>
                         </form>
