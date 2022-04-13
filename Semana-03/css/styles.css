@@ -198,7 +198,7 @@ a:hover {
 }
 
 #contact-us a:hover {
- color: #AACE9B;
+    color: #AACE9B;
 }
 
 .section1 {
@@ -321,23 +321,23 @@ a:hover {
 }
 
 .ask-for {
-display: inline-block;
-width: 1114px;
-height: 542px;
-margin-left: 92px;
-margin-top: 56px;
-border-bottom: #373867 solid;
-background-color: #fff;
+    display: inline-block;
+    width: 1114px;
+    height: 542px;
+    margin-left: 92px;
+    margin-top: 56px;
+    border-bottom: #373867 solid;
+    background-color: #fff;
 }
 
 .ask-for h2 {
-margin-bottom: -38px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 35px;
-color: #373867;
+    margin-bottom: -38px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #373867;
 }
 
 .formulario {
@@ -423,8 +423,11 @@ color: #373867;
     border-radius: 5px;
     background: #AACE9B;
     flex-direction: row;
-    align-items: center;    
+    align-items: center;
 }
+
+
+
 
 .boton:hover{
     border: 1px solid #ffffff;
@@ -520,7 +523,7 @@ color: #373867;
 }
 
 .grupo4 li {
-padding-top: 3px;
+    padding-top: 3px;
 }
 
 .grupo4 a {

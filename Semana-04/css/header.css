@@ -43,3 +43,42 @@ a {
     font-size: 3.125em;
     color: #AACE9B;
 }
+
+@media (min-width: 780px){
+
+.fiting-header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+    background: #373867;
+    z-index: 1;
+}
+
+.tit-header{
+    width: auto;
+}
+
+.radium {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: "Roboto";
+    font-size: 50px;
+    color: #1a8b53;
+    font-weight: bolder;
+}
+
+.rocket {
+    font-size: 50px;
+    color: #AACE9B;
+}
+
+.menu-phone {
+    display: none;
+
+}
+
+
+}
