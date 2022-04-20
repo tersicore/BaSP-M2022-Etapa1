@@ -29,3 +29,67 @@ console.log(resultado)
 var resultado2 = suma("a",5)
 
 console.log(resultado2)
+
+/**
+ * Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero.
+ */
+
+var entero = function(numInt){
+  if (Number.isInteger(numInt)){
+    return true
+  }
+   return false
+};
+
+var result = entero(5.4);
+console.log(result)
+
+/**
+ * A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros.
+ *  En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).
+ */
+
+var sumaEnteros = function(numero1,numero2){
+  if(isNaN(numero1) || isNaN(numero2)){
+      console.log("Los parametros deben ser numeros ");
+      return NaN
+    }
+  if(!(Number.isInteger(numero1)) || !(Number.isInteger(numero2)) ) {
+      console.log("Deben ser numeros enteros");
+      return Math.round(numero1 + numero2)
+    } else {
+      return numero1 + numero2
+    }
+
+}
+
+var resultsuma = sumaEnteros(5.4,5.3)
+
+console.log(resultsuma) 
+
+/**
+ * Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
+ */
+
+
+
+
+var validarNum = function(ResS){
+  if(!(Number.isInteger(ResS)) ) {
+      console.log("Debe ser numero entero");
+      return Math.round(ResS)
+    } else if(isNaN(numero1) || isNaN(numero2)){
+      console.log("Los parametros deben ser numeros ");
+      return NaN
+    } else {
+      return ResS
+    }
+}
+
+var sumaVal = function(numero1,numero2){
+   var ResS = numero1 + numero2;
+  
+  return validarNum(ResS)  
+}
+
+console.log(sumaVal("a",5))
