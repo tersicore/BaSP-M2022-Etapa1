@@ -1,0 +1,99 @@
+.loginmain{
+    position: relative;
+    width: 100%;
+    margin-top: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    margin-left: 0;
+}
+
+.log-in{
+    width: 369px;
+    height: 463px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+.fit-form-logIn{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.fit-form-logIn h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 50px;
+    color: #373867;
+}
+
+#formLogIn{
+    width: 90%;
+}
+
+#divEmail, #divPassword {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 9px;
+}
+#divEmail label, #divPassword label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373867;
+}
+
+#mail , #passwordLogIn {
+    width: 100%;
+    height: 33px;
+    margin-top: 8px;
+    background: #f0eeee;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.style-error-name{
+    display: none;
+    color: red;
+    font-size: 10px;
+}
+
+
+
+.style-error-password{
+    display: none;
+    color: red;
+    font-size: 10px;
+}
+
+.fit-submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+
+}
+
+#submit-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 24px;
+    background: #AACE9B;
+    border-radius: 5px;
+    width: 45%;
+}
