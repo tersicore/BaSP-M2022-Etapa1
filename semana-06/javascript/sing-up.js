@@ -4,6 +4,18 @@ var formSignUp = document.getElementById("formSignUp");
 formSignUp.addEventListener("submit",validateS )
 
 var name = document.getElementById("name").value;
+var nameError = document.getElementById("nameError")
+var lastnameError = document.getElementById("errorLastName")
+var errorDNI = document.getElementById("errorDNI")
+var errorDate = document.getElementById("errorDate")
+var errorTel = document.getElementById("errorTel")
+var errorAddress = document.getElementById("errorAddress")
+var errorLocality = document.getElementById("errorLocality")
+var errorpostalCode = document.getElementById("errorpostalCode")
+var errormailS = document.getElementById("errormailS")
+var errorPasswordS = document.getElementById("errorPasswordS")
+var errorPasswordR = document.getElementById("errorPasswordR")
+
 
 function validateS(e) {
  
@@ -29,7 +41,7 @@ function validateS(e) {
         alert("insert name");
         return false;
     }
-     if (name.length < 3){
+     if (name.length < 2){
         alert("name must contain more than 3 characters")
         return false
         }
@@ -220,6 +232,16 @@ var validNumLetr = function(muy) {
         }
     }
    return letra && numero
+}
+
+
+function mostrarMje() {
+
+if(name === "" || name.length < 2  || ValidLetra(name) ) {
+            errormailS.style.display="block";
+        }
+
+    
 }
 
 
