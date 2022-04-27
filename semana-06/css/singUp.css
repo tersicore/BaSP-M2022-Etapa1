@@ -1,0 +1,28 @@
+.sign-up-main{
+    position: relative;
+    width: 100%;
+    margin-top: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    margin-left: 0;
+}
+
+.fit-form-sign-up{
+    width: 40%;
+    height: 80%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formSignUp{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aqua;
+}
