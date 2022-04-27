@@ -1,25 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="../javascript/login.js"> </script></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" media="screen" />
+    <link rel="stylesheet" href="../css/header.css" media="screen" />
+    <link rel="stylesheet" href="../css/main.css" media="screen" />
+    <link rel="stylesheet" href="../css/footer.css" media="screen" />
+    <link rel="stylesheet" href="../css/login.css" media="screen" />
+    <script type="text/javascript" src="../javascript/login.js"> </script>
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" />
+    <meta charset="utf-8">
+    <meta name="description" content="Transgenix" />
+    <script src="https://kit.fontawesome.com/65fd849204.js" crossorigin="anonymous"></script>
+    <title>
+        Trackgenix
+    </title>
 </head>
 <body>
-<form action="" id="formLogIn" name="formLogIN">
-    <div>
-        <label for="mail">email</label>
-        <input type="email" id="mail" name="user_mail">
+    <div class="contenedor">
+        <header class="fiting-header">
+            <div class="menu-phone">
+                <a href="#">
+                    <i class="fa-solid fa-align-justify" id="iconito"></i>
+                </a>
+            </div>
+            <div class="tit-header">
+                <a href="index.html"><span class="radium">Radium</span>
+                    <span class="rocket"> Rocket </span>
+                </a>
+            </div>
+        </header>
+            <main class="loginmain">
+                <section class="log-in">
+                    <div class = "fit-form-logIn">
+                        <h2>Log In</h2>
+                        <form action="" id="formLogIn" name="formLogIN">
+                            <div id="divEmail">
+                                <label for="mail">Email</label>
+                                <input  id="mail" name="user_mail">
+                                <div id="errorMail" class="style-error-name"><p>Error email</p></div>
+                            </div>
+                            <div id="divPassword">
+                                    <label for="passwordLogIn"> Password </label>
+                                    <input type="password" id="passwordLogIn">
+                                <div class="style-error-password" id="errorPassword"><p>Password must contain max 8 characters, at least one Mayus and one number </p></div>
+                            </div>
+                            <div class="fit-submit">
+                            <input id="submit-button" type="submit" value="Log-in">
+                        </div>
+                        </form>
+                </div>
+                </section>
+            </main>
+        <footer>
+            <div class="iconos-footer">
+                <a href="#">
+                    <img src="../img/linkedin.png">
+                </a>
+                <a href="#">
+                    <img src="../img/twitter.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="../img/whatsapp.png">
+                </a>
+                <a href="#">
+                    <img src="../img/facebook.png">
+                </a>
+            </div>
+            <span>Trackgenix ®</span>
+        </footer>
     </div>
-    <div>
-        <label for="passwordLogIn"> password </label>
-        <input type="password" id="passwordLogIn">
-    </div>
-    <button onclick="validate()">
-        Log In
-    </button>
-</form>
 </body>
+
 </html>

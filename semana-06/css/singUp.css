@@ -26,3 +26,7 @@
     justify-content: space-around;
     background-color: aqua;
 }
+
+.error{
+    display: none;
+}
