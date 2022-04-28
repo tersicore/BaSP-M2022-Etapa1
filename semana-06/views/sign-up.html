@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/header.css" media="screen" />
     <link rel="stylesheet" href="../css/main.css" media="screen" />
     <link rel="stylesheet" href="../css/footer.css" media="screen" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" />
     <script src="../javascript/sing-up.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,85 +32,91 @@
                 <div class="fit-form-sign-up">
                     <h2>Sign Up</h2>
                     <form action="" id="formSignUp" name="formSignUp">
-                        <div id = "divName">
-                            <label for="Name"> Name </label>
-                            <input type="text" id="name">
-                            <div id="errorName" class ="error" >
-                                <p>Name must contain only letters and more than 3 characters</p>
+                        <div class="fit-form-row">
+                            <div class="fit-column">
+                                <div id = "divName" class="sec-div">
+                                    <label for="Name"> Name </label>
+                                    <input type="text" id="name">
+                                    <div id="errorName" class ="error" >
+                                        <p>Name must contain only letters and more than 3 characters</p>
+                                    </div>
+                                </div>
+                                <div id="divLastName" class="sec-div">
+                                    <label for="LastName"> Lastname </label>
+                                    <input type="text" id="lastname">
+                                    <div id="errorLastName" class="error">
+                                        <p>Lastname must contain only letters and more than 3 characters</p>
+                                    </div>
+                                </div>
+                                <div id="divDNI" class="sec-div">
+                                    <label for="DNI"> DNI </label>
+                                    <input type="text" id="DNI">
+                                    <div id="errorDNI" class="error">
+                                    <p> DNI must contain only numbers and more than 7 characters</p>
+                                    </div>
+                                </div>
+                                <div id="DivdateB" class="sec-div">
+                                    <label for="date"> Birth Date </label>
+                                    <input type="date" id="Bdate">
+                                    <div id="errorDate" class="error">
+                                        <p> Insert date of Birth</p>
+                                    </div>
+                                </div>
+                                <div id="DivTelephone" class="sec-div">
+                                    <label for="number"> Telephone </label>
+                                    <input type="text" id="telephone">
+                                    <div id="errorTel" class="error">
+                                    <p> Telephone must contain only numbers and only 10 characters</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div id="divLastName">
-                            <label for="LastName"> Lastname </label>
-                            <input type="text" id="lastname">
-                            <div id="errorLastName" class="error">
-                                <p>Lastname must contain only letters and more than 3 characters</p>
-                            </div>
-                        </div>
-                        <div id="divDNI">
-                            <label for="DNI"> DNI </label>
-                            <input type="text" id="DNI">
-                            <div id="errorDNI" class="error">
-                            <p> DNI must contain only numbers and more than 7 characters</p>
-                            </div>
-                        </div>
-                        <div id="DivdateB">
-                            <label for="date"> Birth Date </label>
-                            <input type="date" id="Bdate">
-                            <div id="errorDate" class="error">
-                                <p> Insert date of Birth</p>
-                            </div>
-                        </div>
-                        <div id="DivTelephone">
-                            <label for="number"> Telephone </label>
-                            <input type="text" id="telephone">
-                            <div id="errorTel" class="error">
-                            <p> Telephone must contain only numbers and only 10 characters</p>
-                            </div>
-                        </div>
-                        <div id="divAdress">
-                            <label for="Address"> Address </label>
-                            <input type="text" id="address">
-                            <div id="errorAddress" class="error">
-                                <p>Address must contain more than 3 characters</p>
-                            </div>
-                        </div>       
-                        <div id="divLocality">
-                            <label for="Locality"> Locality </label>
-                            <input type="text" id="locality">
-                            <div id="errorLocality" class="error">
-                                <p>Address must contain more than 3 characters</p>
-                            </div>
-                        </div>
-                        <div id="divPostalCode">
-                            <label for="PostalCode"> Postal Code </label>
-                            <input type="number" id="postalCode">
-                            <div id="errorpostalCode" class="error">
-                                <p>Postal code must contain only numbers and just 4 or 5 characters</p>
-                            </div>
-                        </div>
-                        <div id="divEmailS">
-                            <label for="Email"> E-mail </label>
-                            <input type="text" id="mailS">
-                            <div id="errormailS" class="error">
-                            <p>email invalid</p> 
-                            </div>
-                        </div>
-                        <div id="divPasswordS">
-                            <label for="passwordSign"> Password </label>
-                            <input type="text" id="passwordSignUp">
-                            <div class="error" id="errorPasswordS">
-                                <p>Password must contain max 8 characters, at least one Mayus and one number </p>
-                            </div>
-                        </div>
-                        <div id="divRepeatP">
-                            <label for="passwordSignRepeat"> Repeat Password </label>
-                            <input type="password" id="passwordRepeat">
-                            <div class="error" id="errorPasswordR">
-                                <p>Password must coincide </p>
+                            <div class="fit-column">
+                                <div id="divAdress" class="sec-div">
+                                    <label for="Address"> Address </label>
+                                    <input type="text" id="address">
+                                    <div id="errorAddress" class="error">
+                                        <p>Address must contain more than 3 characters</p>
+                                    </div>
+                                </div>       
+                                <div id="divLocality" class="sec-div">
+                                    <label for="Locality"> Locality </label>
+                                    <input type="text" id="locality">
+                                    <div id="errorLocality" class="error">
+                                        <p>Address must contain more than 3 characters</p>
+                                    </div>
+                                </div>
+                                <div id="divPostalCode" class="sec-div">
+                                    <label for="PostalCode"> Postal Code </label>
+                                    <input type="number" id="postalCode">
+                                    <div id="errorpostalCode" class="error">
+                                        <p>Postal code must contain only numbers and just 4 or 5 characters</p>
+                                    </div>
+                                </div>
+                                <div id="divEmailS" class="sec-div">
+                                    <label for="Email"> E-mail </label>
+                                    <input type="text" id="mailS">
+                                    <div id="errormailS" class="error">
+                                    <p>email invalid</p> 
+                                    </div>
+                                </div>
+                                <div id="divPasswordS" class="sec-div">
+                                    <label for="passwordSign"> Password </label>
+                                    <input type="text" id="passwordSignUp">
+                                    <div class="error" id="errorPasswordS">
+                                        <p>Password must contain max 8 characters, at least one Mayus and one number </p>
+                                    </div>
+                                </div>
+                                <div id="divRepeatP" class="sec-div">
+                                    <label for="passwordSignRepeat"> Repeat Password </label>
+                                    <input type="password" id="passwordRepeat">
+                                    <div class="error" id="errorPasswordR">
+                                        <p>Password must coincide </p>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                         <div class="fit-submit">
-                            <input type="submit" id="enviar" value="Enviar" method="get">
+                            <input type="submit" id="enviar" value="Sign Up" method="get">
                         </div>
                     </form>
                 </div>
