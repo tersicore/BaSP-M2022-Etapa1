@@ -4,17 +4,7 @@ var formSignUp = document.getElementById("formSignUp");
 formSignUp.addEventListener("submit",validateS )
 
 var name = document.getElementById("name").value;
-var nameError = document.getElementById("nameError")
-var lastnameError = document.getElementById("errorLastName")
-var errorDNI = document.getElementById("errorDNI")
-var errorDate = document.getElementById("errorDate")
-var errorTel = document.getElementById("errorTel")
-var errorAddress = document.getElementById("errorAddress")
-var errorLocality = document.getElementById("errorLocality")
-var errorpostalCode = document.getElementById("errorpostalCode")
-var errormailS = document.getElementById("errormailS")
-var errorPasswordS = document.getElementById("errorPasswordS")
-var errorPasswordR = document.getElementById("errorPasswordR")
+
 
 
 function validateS(e) {
@@ -23,14 +13,15 @@ function validateS(e) {
 
     var name = document.getElementById("name").value;
     var lastname =document.getElementById("lastname").value;
-    var DNI =document.getElementById("DNI").value;
+    var dNI =document.getElementById("DNI").value;
     var telephone = document.getElementById("telephone").value
-    var Bdate = document.getElementById("Bdate").value
+    var bdate = document.getElementById("Bdate").value
     var postalCode = document.getElementById("postalCode").value
     var address =document.getElementById("address").value
     var locality = document.getElementById("locality").value
     var emailSignUp = document.getElementById("mailS").value
     var passwordSignUp =document.getElementById("passwordSignUp").value
+    var passwordRep =document.getElementById("passwordRepeat").value
     //var ExpSoloLetras = /^[A-Za-z]/;
     var expMail = /\w+@\w+\.+[a-z]/;
     //var expPassword = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/
@@ -45,7 +36,7 @@ function validateS(e) {
         alert("name must contain more than 3 characters")
         return false
         }
-    if(ValidLetra(name)){
+    if(!ValidLetra(name)){
         alert("name must contain only letters");
         return false;
         }
@@ -53,24 +44,24 @@ function validateS(e) {
         alert("insert last name");
         return false;
         }
-     if (lastname.length < 3){
+     if (lastname.length < 2){
         alert("lastname must contain more than 3 characters")
         return false
         }
-    if(ValidLetra(lastname)){
+    if(!ValidLetra(lastname)){
         alert("lastname must contain only letters");
         return false;
         }
 
-    if(DNI === "") {
+    if(dNI === "") {
             alert("insert DNI");
             return false;
         }
-    if( ValidNum(DNI)) {
+    if( !ValidNum(dNI)) {
             alert("DNI must be a number");
             return false;
         }
-    if (DNI.length < 7) {
+    if (dNI.length < 7) {
         alert("DNI must contain more tha 7 characters")
         return false;
     }
@@ -78,7 +69,7 @@ function validateS(e) {
             alert("insert Telephone");
             return false;
         }
-    if( ValidNum(telephone)) {
+    if( !ValidNum(telephone)) {
             alert("Telephone must be a number");
             return false;
         }
@@ -87,7 +78,7 @@ function validateS(e) {
         return false;
     }
 
-    if (Bdate === ""){
+    if (bdate === ""){
         alert("insert date")
         return false;
     }
@@ -96,7 +87,7 @@ function validateS(e) {
             alert("insert Postal Code");
             return false;
         }
-    if(ValidNum(postalCode)) {
+    if(!ValidNum(postalCode)) {
             alert("Postal Code must be a number");
             return false;
         }
@@ -113,11 +104,6 @@ function validateS(e) {
         alert("address must contain more than 5 characters")
         return false
         }
-
-       /*if (address = 'string' + '/s' + 'string')   {
-        alert("caca")
-        return false
-        }*/
 
 
     
@@ -162,8 +148,14 @@ function validateS(e) {
         return false
     }
 
+    if( !(passwordRep === passwordSignUp)){
+        alert("Passwords don't coincide")
+        return false
+    }
+
+
      else{
-        alert("enviado")
+        alert("Name: "+ name +" "+"Lastname: "+lastname+" "+"DNI "+ dNI +" "+"  Telephone "+telephone+ +"Address "+ address +" "+"Locality: "+locality +" "+"Postal Code: "+ postalCode +" "+"Email: "+ emailSignUp )
     }
 
 return validateS
@@ -235,14 +227,134 @@ var validNumLetr = function(muy) {
 }
 
 
+var nameEvent = document.getElementById("name")
+var lastnameEvent =document.getElementById("lastname");
+var dNIEvent =document.getElementById("DNI");
+var telephoneEvent = document.getElementById("telephone")
+var bdateEvent = document.getElementById("Bdate")
+var postalCodeEvent = document.getElementById("postalCode")
+var addressEvent =document.getElementById("address")
+var localityEvent = document.getElementById("locality")
+var emailSignUpEvent = document.getElementById("mailS")
+var passwordSignUpEvent =document.getElementById("passwordSignUp")
+var passwordRepEvent = document.getElementById("passwordRepeat")
+
 function mostrarMje() {
 
-if(name === "" || name.length < 2  || ValidLetra(name) ) {
-            errormailS.style.display="block";
+    var name = document.getElementById("name").value;
+    var lastname =document.getElementById("lastname").value;
+    var dNI =document.getElementById("DNI").value;
+    var telephone = document.getElementById("telephone").value
+    var bdate = document.getElementById("Bdate").value
+    var postalCode = document.getElementById("postalCode").value
+    var address =document.getElementById("address").value
+    var locality = document.getElementById("locality").value
+    var emailSignUp = document.getElementById("mailS").value
+    var passwordSignUp =document.getElementById("passwordSignUp").value
+    var passwordRep =document.getElementById("passwordRepeat").value
+    var expMail = /\w+@\w+\.+[a-z]/;
+    var nameError = document.getElementById("errorName")
+    var lastnameError = document.getElementById("errorLastName")
+    var errorDNI = document.getElementById("errorDNI")
+    var errorDate = document.getElementById("errorDate")
+    var errorTel = document.getElementById("errorTel")
+    var errorAddress = document.getElementById("errorAddress")
+    var errorLocality = document.getElementById("errorLocality")
+    var errorpostalCode = document.getElementById("errorpostalCode")
+    var errormailS = document.getElementById("errormailS")
+    var errorPasswordS = document.getElementById("errorPasswordS")
+    var errorPasswordR = document.getElementById("errorPasswordR")
+
+
+    if(name === "" || name.length < 2  || !ValidLetra(name) ) {
+                nameError.style.display="block";
+            }
+    if(lastname === "" || lastname.length < 2  || !ValidLetra(lastname)){
+        lastnameError.style.display="block" 
+    }
+     if(dNI === "" || dNI.length < 7  || !ValidNum(dNI)){
+        errorDNI.style.display="block"
+    }
+    if(telephone === "" || telephone.length < 9  || !ValidNum(telephone)){
+        errorTel.style.display="block"
+    }
+    if(postalCode === "" || !(postalCode.length == 4 || postalCode.length ==5)  || !ValidNum(postalCode)){
+        errorpostalCode.style.display="block"
+    }
+     if(address === "" || address.length < 4)  {
+            errorAddress.style.display="block";
         }
+    if(bdate==="") {
+        errorDate.style.display="block"
+    }
+    if(locality === "" || locality.length < 4){
+        errorLocality.style.display="block"
+    }
+      if(emailSignUp === "" || !expMail.test(emailSignUp)){
+        errormailS.style.display="block"
+    }
+    if(passwordSignUp === "" || passwordSignUp.length < 7  ||  !validNumLetr(passwordSignUp)){
+        errorPasswordS.style.display="block"
+    }   
+     if( !(passwordRep === passwordSignUp)){
+        errorPasswordR.style.display="block"
+     }
 
     
+
+
+return false    
 }
+
+function Clear(){
+    var nameError = document.getElementById("errorName")
+    var lastnameError = document.getElementById("errorLastName")
+    var errorDNI = document.getElementById("errorDNI")
+    var errorDate = document.getElementById("errorDate")
+    var errorTel = document.getElementById("errorTel")
+    var errorAddress = document.getElementById("errorAddress")
+    var errorLocality = document.getElementById("errorLocality")
+    var errorpostalCode = document.getElementById("errorpostalCode")
+    var errormailS = document.getElementById("errormailS")
+    var errorPasswordS = document.getElementById("errorPasswordS")
+    var errorPasswordR = document.getElementById("errorPasswordR")
+    nameError.style.display = "none";
+    lastnameError.style.display="none";
+    errorDNI.style.display="none";
+    errorTel.style.display="none";
+    errorAddress.style.display="none";
+    errorLocality.style.display="none";
+    errorDate.style.display="none";
+    errorpostalCode.style.display="none";
+    errormailS.style.display="none";
+    errorPasswordS.style.display="none";
+    errorPasswordR.style.display="none";
+
+return Clear
+}
+
+nameEvent.addEventListener("blur",mostrarMje);
+nameEvent.addEventListener("focus",Clear);
+lastnameEvent.addEventListener("blur",mostrarMje);
+lastnameEvent.addEventListener("focus",Clear)
+dNIEvent.addEventListener("blur",mostrarMje);
+dNIEvent.addEventListener("focus",Clear);
+telephoneEvent.addEventListener("blur",mostrarMje);
+telephoneEvent.addEventListener("focus",Clear);
+bdateEvent.addEventListener("blur",mostrarMje);
+bdateEvent.addEventListener("focus",Clear);
+postalCodeEvent.addEventListener("blur",mostrarMje);
+postalCodeEvent.addEventListener("focus",Clear);
+addressEvent.addEventListener("blur",mostrarMje);
+addressEvent.addEventListener("focus",Clear);
+localityEvent.addEventListener("blur",mostrarMje);
+localityEvent.addEventListener("focus",Clear);
+passwordSignUpEvent.addEventListener("blur",mostrarMje);
+passwordSignUpEvent.addEventListener("focus",Clear);
+emailSignUpEvent.addEventListener("blur",mostrarMje);
+emailSignUpEvent.addEventListener("focus",Clear);
+passwordRepEvent.addEventListener("blur",mostrarMje);
+passwordRepEvent.addEventListener("focus",Clear);
 
 
 
