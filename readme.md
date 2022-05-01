@@ -1,7 +1,7 @@
 # Tracksgenix
 Trackgenix is an app that helps companies to register the working hours of each employee. It has others funcionalities such as proyect management, employee registration and more. Every user has a roll assigned wich contains diferents functions according to its work.
 
-click here or copy to your browser https://tersicore.github.io/BaSP-M2022-Etapa1/semana-06/
+click here or copy to your browser https://tersicore.github.io/BaSP-M2022-Etapa1/semana-06/views/
 
 ## Second Week
 ```
