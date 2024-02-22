@@ -16,11 +16,12 @@ We created css stylesheet using the landing page inteface on figma, as model.
 We edited css files using flexbox propeties. This propeties allow us to make the layout responsive. Also. we had to desing mobile and tablet interface of the landing page. 
 ```
 ## Fifth Week
-
+```
 We learned first topics of JavaScript. For educational propouses, 
 we made some task such as creating functions, condictionals, arrays and loops. 
-
+```
 
 ## Sixth Week
-
+```
 We made form validations for-sign up and log-in using javascript
+```
